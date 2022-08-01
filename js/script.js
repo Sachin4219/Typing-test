@@ -1,5 +1,5 @@
 	let numberOfWords=0;
-	const url = "https://api.quotable.io/random"
+	const url = "https://api.quotable.io/random";
 	const startBtn = document.querySelector('.start .btn'); 
 	const testArea = document.querySelector('.test-area')
 	const timer    = document.querySelector('.timer');
