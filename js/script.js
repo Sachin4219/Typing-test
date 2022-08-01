@@ -1,4 +1,5 @@
 	let numberOfWords=0;
+	const url = "https://api.quotable.io/random"
 	const startBtn = document.querySelector('.start .btn'); 
 	const testArea = document.querySelector('.test-area')
 	const timer    = document.querySelector('.timer');
@@ -13,7 +14,7 @@
 	let count
 
 	function getPhrase(){
-		return fetch("http://api.quotable.io/random")
+		return fetch(url)
 			.then(response => response.json())
 			.then(data => data.content)
 	}
